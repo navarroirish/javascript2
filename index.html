@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exercise 2</title>
+</head>
+<body>
+    <h1>Text Concatenator</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="str1">First Name: </label>
+            </td>
+            <td>
+                <input type="text" name="str1" id="str1" placeholder="Enter First Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="str2">Second Name: </label>
+            </td>
+            <td>
+                <input type="text" name="str2" id="str2" placeholder="Enter Second Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="str3">Last Name: </label>
+            </td>
+            <td>
+                <input type="text" name="str3" id="str3" placeholder="Enter Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="concatenate()">Concatenate</button>
+                <button onclick="clearEntries2()">Clear Entries</button>
+            </td>
+        </tr>
+    </table>
+
+    <p style="font-weight: bold;">Result:</p>
+    <p>Full Name: <span id="concatTxt" style="color: red; font-weight: bold;"></span></p>
+    
+    <script src="main.js"></script>
+</body>
+</html>
